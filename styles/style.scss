@@ -1,5 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+$header--size-normal: 2.5rem;
+$header--size-big: 4rem;
+$header--size-small: 2rem;
+$text--size-normal: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$text--color-normal: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
+
+@import "global";
