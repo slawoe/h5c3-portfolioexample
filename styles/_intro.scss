@@ -29,7 +29,8 @@
   }
 }
 
-#intro > div {
+#intro > div:first-child,
+#intro > div:last-child {
   flex: 1 1 40rem;
 }
 

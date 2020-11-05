@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -159,7 +160,8 @@ nav ul {
   margin-right: 5rem;
 }
 
-#intro > div {
+#intro > div:first-child,
+#intro > div:last-child {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -267,6 +269,87 @@ nav ul {
   to {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  #intro > div > svg {
+    width: 80%;
+  }
+  header > nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  #intro > div > svg {
+    height: 60%;
+    padding: 5rem;
+  }
+  #intro > div:first-child {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  #intro > div:first-child > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #intro > div:first-child > div a {
+    margin: 2rem;
+  }
+  #intro > div:last-child {
+    text-align: center;
+  }
+  header {
+    width: 100%;
+  }
+  header > nav {
+    padding: 2rem;
+  }
+  header > nav > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    margin-top: 2rem;
+  }
+  header > nav > ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
+    margin: 2rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

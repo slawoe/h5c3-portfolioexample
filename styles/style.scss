@@ -16,3 +16,56 @@ $text--color-normal: #2c2c2c;
 @import "global";
 @import "header";
 @import "intro";
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  #intro > div > svg {
+    width: 80%;
+  }
+  header > nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  #intro > div > svg {
+    height: 60%;
+    padding: 5rem;
+  }
+  #intro > div:first-child {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  #intro > div:first-child > div {
+    @include flex(center, center, row);
+    & a {
+      margin: 2rem;
+    }
+  }
+  #intro > div:last-child {
+    text-align: center;
+  }
+  header {
+    width: 100%;
+  }
+  header > nav {
+    padding: 2rem;
+  }
+  header > nav > div {
+    @include flex(center, center, column);
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+  }
+  header > nav > ul {
+    flex: 1 1 60rem;
+    margin: 2rem 0;
+  }
+}
