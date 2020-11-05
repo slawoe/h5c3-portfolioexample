@@ -70,11 +70,14 @@ $text--color-normal: #2c2c2c;
     flex: 1 1 60rem;
     margin: 2rem 0;
   }
-
   .projects > div {
     flex: 1 1 70rem;
     & img {
       width: 100%;
     }
+  }
+  form {
+    padding: 0;
+    width: 100%;
   }
 }

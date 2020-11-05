@@ -345,6 +345,7 @@ nav ul {
 #form-section > form > input,
 #form-section > form > textarea {
   margin: 2rem;
+  width: 100%;
 }
 
 #form-section > form > input:focus,
@@ -453,6 +454,10 @@ nav ul {
             flex: 1 1 70rem;
   }
   .projects > div img {
+    width: 100%;
+  }
+  form {
+    padding: 0;
     width: 100%;
   }
 }

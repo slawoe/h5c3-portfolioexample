@@ -11,6 +11,7 @@
     & > input,
     > textarea {
       margin: 2rem;
+      width: 100%;
       &:focus {
         outline: 2px solid black;
       }
