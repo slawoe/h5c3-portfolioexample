@@ -1,7 +1,6 @@
 #form-section {
   min-height: 80vh;
   @include flex(center, center, row);
-  margin-top: 3rem;
   & > form {
     padding: 3rem 10rem;
     box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.2),
@@ -12,13 +11,10 @@
     > textarea {
       margin: 2rem;
       width: 100%;
+      font-family: "Montserrat", sans-serif;
       &:focus {
         outline: 2px solid black;
       }
-    }
-    & > textarea {
-      font-family: "Montserrat", sans-serif;
-      font-size: 2rem;
     }
     & > button {
       width: 100%;
