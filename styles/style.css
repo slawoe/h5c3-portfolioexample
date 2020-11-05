@@ -272,6 +272,38 @@ nav ul {
   }
 }
 
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects h2 {
+  margin: 5rem;
+}
+
+.projects > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
 @media screen and (max-width: 1332px) {
   html {
     font-size: 53%;
@@ -350,6 +382,14 @@ nav ul {
         -ms-flex: 1 1 60rem;
             flex: 1 1 60rem;
     margin: 2rem 0;
+  }
+  .projects > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70rem;
+            flex: 1 1 70rem;
+  }
+  .projects > div img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

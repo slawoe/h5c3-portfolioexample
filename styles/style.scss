@@ -16,6 +16,7 @@ $text--color-normal: #2c2c2c;
 @import "global";
 @import "header";
 @import "intro";
+@import "projects";
 
 @media screen and (max-width: 1332px) {
   html {
@@ -67,5 +68,12 @@ $text--color-normal: #2c2c2c;
   header > nav > ul {
     flex: 1 1 60rem;
     margin: 2rem 0;
+  }
+
+  .projects > div {
+    flex: 1 1 70rem;
+    & img {
+      width: 100%;
+    }
   }
 }
