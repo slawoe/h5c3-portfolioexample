@@ -1,0 +1,48 @@
+#intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+  & h2 {
+    font-size: 8rem;
+    padding-top: 2rem;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  & h3 {
+    font-size: 6rem;
+    padding: 2rem 0;
+  }
+  & p {
+    padding-top: 2rem 0;
+    color: $text--color-normal;
+  }
+}
+
+#intro > div > div {
+  margin-top: 4rem;
+  & a {
+    margin-right: 5rem;
+  }
+}
+
+#intro > div {
+  flex: 1 1 40rem;
+}
+
+.splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.active {
+  background: $text--color-normal;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+}
