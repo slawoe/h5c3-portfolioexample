@@ -46,3 +46,46 @@
   padding: 1rem 3rem;
   border-radius: 20px;
 }
+
+#plant-left {
+  animation: plant 1.5s ease-in-out infinite alternate;
+}
+
+#plant-right {
+  animation: plant 1.5s ease-in-out infinite alternate 0.5s;
+}
+@keyframes plant {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+#me {
+  animation: me 1s ease infinite alternate;
+  transform-origin: bottom;
+}
+@keyframes me {
+  from {
+    transform: rotateZ(-2deg);
+  }
+  to {
+    transform: rotateZ(2deg);
+  }
+}
+
+#clock-arrow {
+  animation: clock 3s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

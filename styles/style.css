@@ -178,4 +178,95 @@ nav ul {
   padding: 1rem 3rem;
   border-radius: 20px;
 }
+
+#plant-left {
+  -webkit-animation: plant 1.5s ease-in-out infinite alternate;
+          animation: plant 1.5s ease-in-out infinite alternate;
+}
+
+#plant-right {
+  -webkit-animation: plant 1.5s ease-in-out infinite alternate 0.5s;
+          animation: plant 1.5s ease-in-out infinite alternate 0.5s;
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@keyframes plant {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+#me {
+  -webkit-animation: me 1s ease infinite alternate;
+          animation: me 1s ease infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes me {
+  from {
+    -webkit-transform: rotateZ(-2deg);
+            transform: rotateZ(-2deg);
+  }
+  to {
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+}
+
+@keyframes me {
+  from {
+    -webkit-transform: rotateZ(-2deg);
+            transform: rotateZ(-2deg);
+  }
+  to {
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+}
+
+#clock-arrow {
+  -webkit-animation: clock 3s linear infinite;
+          animation: clock 3s linear infinite;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes clock {
+  from {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */
