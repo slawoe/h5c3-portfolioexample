@@ -6,3 +6,31 @@
 html {
   font-size: 62.5%;
 }
+h1 {
+  font-size: $header--size-normal;
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text--size-normal;
+}
+h2 {
+  font-size: $header--size-big;
+}
+h3 {
+  font-size: $header--size-normal;
+}
+h4,
+h5 {
+  font-size: $header--size-small;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $text--color-normal;
+}
